@@ -57,8 +57,9 @@ su
 // figure
 twoway ///
    (function t_b = normalden(x, t_b, t_se_b), range(`=t_b-4*t_se_b' `=t_b+4*t_se_b') recast(area) color(blue%20)) ///
-   (kdensity est_b, recast(area) color(red%20)) ///
+   (hist est_b, bin(60) color(red%20)) ///
 	, ytitle("Sampling Distribution") ylab(, nogrid) /// 
 	xtitle("Estimated Odds Ratio") ///
 	legend(label(1 "Theoretical") label(2 "Simulated") ring(0) pos(1) col(1) region(style(none))) ///
 	xlabel(`=ln(3.86)' "3.86" .85 "2.33" 1.85 "6.36", nogrid) plotregion(style(none))
+	
