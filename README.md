@@ -1,4 +1,4 @@
-Simualtion of a simple prospective cohort study
+**Simualtion of a simple prospective cohort study**
 
 This is a simple code to illustarte the idea of simulating 
 a prospective cohort study with an exposure, X, and a binary outcome, Y. 
