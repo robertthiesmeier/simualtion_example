@@ -1,17 +1,16 @@
-/* Example of a simple prospective cohort study 
+/***************************************************************** 
+Example of a simple prospective cohort study 
 
- X = exposure
- Y = outcome 
+X = exposure
+Y = outcome 
  
- P(X) = .2
- P(Y=1|X=0) = .1 
- P(Y=1|X=1) = .3
- OR = [.3/(1-.3)]/[.1/(1-.1)]
- 
-*/
+P(X) = .2
+P(Y=1|X=0) = .1 
+P(Y=1|X=1) = .3
+OR = [.3/(1-.3)]/[.1/(1-.1)] 
+********************************************************************/
 
 // create a program to simualte the study
-
 capture program drop sim_study
 program define sim_study, rclass
 	drop _all 
